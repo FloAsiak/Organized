@@ -1,0 +1,20 @@
+SRC = my_hunter.c \
+      choosecreate.c \
+      animation.c \
+      main.c \
+      struct.c \
+      ini.c \
+
+COM = -lcsfml-system -lcsfml-graphics -lcsfml-window
+
+NAME = my_hunter
+
+all:
+	gcc -o $(NAME) $(SRC) -I include/ $(COM)
+
+clean:
+	rm -f $(NAME)
+
+fclean:	clean
+
+re:	fclean all
