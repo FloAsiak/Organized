@@ -5,14 +5,14 @@
 ## Makefile for Organized 
 ##
 
-SRC =
+SRC = main.c
 
 COM = -lcsfml-system -lcsfml-graphics -lcsfml-window
 
 NAME = organized
 
 all:
-	gcc -o $(NAME) $(SRC) -I include/ $(COM)
+	gcc -o $(NAME) $(SRC) -I include/
 
 clean:
 	rm -f $(NAME)
